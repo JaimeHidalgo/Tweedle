@@ -1,0 +1,26 @@
+<div class="clearfix" ng-show="authenticated">
+	<h1>Time:</h1><br>
+	<div class="clock" ng-class="clockDown"><span ng-class="{'color-blue': timerDisplay >= 35,'color-orange': timerDisplay <= 35,'color-yellow' :timerDisplay <= 20,'color-red': timerDisplay <=10}">{{ timerDisplay }}</span></div>
+  <form ng-Submit="post()" ng-show="authenticated">
+    <h4>{{current_user}} says:</h4>
+    <div>You're points are: <span ng-bind="countOf(newPost.text)"></span></div>
+    <textarea required class="form-control" maxlength="140" rows="3" placeholder="Say something" ng-model="newPost.text" ng-readonly="truefalse" ng-trim="false"></textarea>
+    <p>{{140 - newPost.text.length}} /140</p>
+    <input class="btn submit-btn btn-primary pull-right" type="submit" value="Tweedle!" />
+    <button type="button" class="btn btn-primary" data-ng-click="start()">Start</button>
+  </form>
+</div>
+<div id="post-stream">
+	<h4>Score Board:</h4>
+		<div class="post" ng-repeat="post in posts | orderBy:'points' " ng-class-odd="'odd'" ng-class-even="'even'"> 
+			<p>{{post.text}}</p>
+			<small>Posted by @{{post.created_by}}</small>
+			<small><b>Points:</b> {{post.points}}</small>
+			
+			<small class="pull-right">{{post.created_at | date:"h:mma 'on' MMM d, y"}}</small>
+			
+		</div>
+</div>
+
+
+      

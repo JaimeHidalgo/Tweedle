@@ -1,0 +1,9 @@
+<nav class="navbar-fluid navbar-default navbar-fixed-top " id="navBar">
+	<div class="container" >
+		<a class="navbar-brand" href="#" id="title">Tweedle</a>
+		<p class="navbar-text" id="des">A game to proof you skills to twit the fastest</p>
+		<p class="navbar-right navbar-text" ng-hide="authenticated"><a href="#/login">Login</a> or <a href="#/register">Register</a></p>
+		<p class="navbar-right navbar-text" ng-show="authenticated"><a href="#" ng-click="signout()">Logout</a></p>
+		<p class="navbar-right navbar-text" ng-show="authenticated">Signed in as {{current_user}}</p>
+	</div>
+</nav>

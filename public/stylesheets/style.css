@@ -1,0 +1,80 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding: 0px;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+}
+textarea {
+  resize: none;
+}
+#footer {
+  color: #F0810F;
+}
+#title {
+  color:#F0810F;
+  font-size: 40px;
+}
+#des{
+  color:#F0810F;
+}
+#navBar {
+  background-color: #070422;
+  
+}
+.tweedleBody {
+  background-color: #E6DF44;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  background-color: #070422;
+}
+a {
+  color: #F0810F;
+}
+
+.body {
+	background-color: #070422;
+	color:#F0810F;
+}
+.navBar {
+	background-color: #f5f5f5;
+}
+.even {
+	background-color: #063852;
+}
+.odd {
+	background-color: #070422;
+}
+
+.thisOnly {
+	margin: 100px;
+}
+.clock {
+    font-size: 40px;
+    background-color: #FFFFFF;
+   
+}
+/* the css for the clock when pass different point in the countdown*/
+.color-blue {
+	color: #070422 ;
+}
+.color-orange {
+	 color: #F0810F ;
+}
+.color-yellow {
+	color: #E6DF44;
+}
+.color-red {
+	color: #FF5C4B;
+}
